@@ -41,7 +41,7 @@ ActiveMessage::Template
 
 ```ruby
 ActiveMessage::Strategies::Broadcast
-ActiveMessage::Email
+ActiveMessage::Strategies::Email
 ```
 
 ## Contributing
