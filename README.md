@@ -20,11 +20,11 @@ Or install it yourself as:
 
 ```ruby
 
-message = ActiveMessage::Message.new(receipient, "Message")
+message = ActiveMessage::Message.new(recipient, "Message")
 message.strategy = ActiveMessage::Strategies::Broadcast.new
 message.send
 
-message = ActiveMessage::TemplateMessage.new(recipient, template_id, params)
+message = ActiveMessage::TemplateMessage.new(recipient, template_reference, params)
 message.strategy = ActiveMessage::Strategies::Email.new
 message.send
 ```
@@ -32,9 +32,8 @@ message.send
 ### Supported Backends
 
 ```ruby
-ActiveMessage::Email
-ActiveMessage::Notification
-ActiveMessage::Template
+ActiveMessage::Backends::Email
+ActiveMessage::Backends::Template
 ```
 
 ### Supported Strategies
