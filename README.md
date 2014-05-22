@@ -33,7 +33,7 @@ message.send
 
 ```ruby
 ActiveMessage::Backends::Email
-ActiveMessage::Backends::Template
+ActiveMessage::Backends::LiquidTemplate
 ```
 
 ### Supported Strategies
